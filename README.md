@@ -20,6 +20,7 @@
       <li>HTML</li>
       <li>CSS(SASS)</li>
       <li>JavaScript</li>
+     <li><a href="https://fancyapps.com/docs/ui/fancybox/">Fancybox library</a></li>
     </ul>
   </li>
 </ul>
