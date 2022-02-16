@@ -1,0 +1,40 @@
+.technology {
+  overflow: visible;
+  // position: relative;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    // position: relative;
+    height: 327px;
+    width: 100%;
+    // left: 0px;
+    // right: -30px;
+    // top: 0;
+    object-fit: cover;
+    object-position: left;
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include onTablet {
+      height: 600px;
+      max-width: 100%;
+      left: 0;
+      right: 0;
+    }
+
+    @include onDesktop {
+      max-width: 1224px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

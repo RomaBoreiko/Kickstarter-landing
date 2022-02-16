@@ -1,0 +1,94 @@
+.page {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  &__body {
+    background-color: #f7f7f7;
+    
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
+
+  &__benefits {
+    @include onDesktop {
+      margin-bottom: 75px;
+    }
+  }
+
+  &__presentation {
+    padding-top: 75px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__about-us {
+    padding-top: 89px;
+    margin-bottom: 65px;
+
+    @include onDesktop {
+      margin-bottom: 75px;
+    }
+  }
+
+  &__technology {
+    padding-top: 33px;
+
+    @include onTablet {
+      padding-top: 130px;
+    }
+
+    @include onDesktop {
+      padding-top: 75px;
+    }
+  }
+
+  &__testimonials {
+    padding-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  &__features {
+    padding-top: 50px;
+    padding-bottom: 250px;
+
+    @include onTablet {
+      padding-top: 130px;
+      padding-bottom: 0;
+    }
+
+    @include onDesktop {
+      margin-bottom: 24px;
+      padding-top: 50px;
+    }
+  }
+
+  &__questions {
+    padding-top: 45px;
+
+    @include onTablet {
+      padding-top: 138px;
+    }
+
+    @include onDesktop {
+      padding-top: 188px;
+    }
+  }
+
+  &__footer {
+    padding-top: 30px;
+
+    @include onTablet {
+      padding-top: 0;
+    }
+  }
+}

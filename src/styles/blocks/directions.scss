@@ -1,0 +1,42 @@
+.directions {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    color: #333;
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      height: 1px;
+      width: 1%;
+      bottom: -5px;
+
+      transition: width 0.5s;
+
+    }
+
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: #333;
+        height: 1px;
+        width: 100%;
+        bottom: -5px;
+      }
+    }
+  }
+}
